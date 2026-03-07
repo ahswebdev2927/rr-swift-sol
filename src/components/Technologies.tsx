@@ -1,16 +1,31 @@
 import { motion } from "framer-motion";
 
 const techs = [
-  { name: "Java", icon: "☕" },
+  { name: "Java Full Stack", icon: "☕" },
+  { name: "React", icon: "⚛️" },
+  { name: "Angular", icon: "🅰️" },
+  { name: "Node.js", icon: "🟢" },
+  { name: "Python", icon: "🐍" },
   { name: "AWS", icon: "☁️" },
   { name: "DevOps", icon: "⚙️" },
   { name: "Salesforce", icon: "💼" },
   { name: "Data Science", icon: "📊" },
-  { name: "Python", icon: "🐍" },
-  { name: "React", icon: "⚛️" },
   { name: "Azure", icon: "🔷" },
   { name: ".NET", icon: "🔶" },
   { name: "Selenium", icon: "🧪" },
+  { name: "QA Testing", icon: "✅" },
+  { name: "SAP", icon: "🏢" },
+  { name: "C++", icon: "⚡" },
+  { name: "Ruby on Rails", icon: "💎" },
+  { name: "Cyber Security", icon: "🔒" },
+  { name: "Machine Learning", icon: "🤖" },
+  { name: "RPA / UI Path", icon: "🤖" },
+  { name: "PHP", icon: "🐘" },
+  { name: "AB Initio", icon: "🔄" },
+  { name: "Appian BPM", icon: "📋" },
+  { name: "Informatica", icon: "🔗" },
+  { name: "ServiceNow", icon: "🛠️" },
+  { name: "Network Eng.", icon: "🌐" },
 ];
 
 const Technologies = () => {
@@ -30,6 +45,9 @@ const Technologies = () => {
           <h2 className="font-display text-3xl sm:text-4xl font-bold text-foreground">
             Technologies We <span className="text-gradient-green">Support</span>
           </h2>
+          <p className="mt-4 text-muted-foreground max-w-lg mx-auto">
+            On-job support and training across 25+ technologies — and many more.
+          </p>
         </motion.div>
 
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4">
@@ -39,13 +57,13 @@ const Technologies = () => {
               initial={{ opacity: 0, scale: 0.95 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.3, delay: i * 0.05 }}
+              transition={{ duration: 0.3, delay: i * 0.03 }}
               className="group flex flex-col items-center justify-center p-6 rounded-xl border border-border bg-card hover:bg-green-subtle hover:border-primary/30 transition-all duration-300 cursor-default"
             >
               <span className="text-3xl mb-3 group-hover:scale-110 transition-transform duration-300">
                 {tech.icon}
               </span>
-              <span className="text-sm font-semibold text-foreground">
+              <span className="text-sm font-semibold text-foreground text-center">
                 {tech.name}
               </span>
             </motion.div>
