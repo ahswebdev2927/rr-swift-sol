@@ -49,7 +49,7 @@ const Services = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: i * 0.1 }}
-              className="group relative bg-card p-8 rounded-xl border border-border hover:shadow-lg transition-all duration-300"
+              className="group relative bg-card p-8 rounded-xl border border-border hover:bg-green-subtle hover:border-primary/40 hover:shadow-lg hover:shadow-primary/10 transition-all duration-300"
             >
               <div className="w-12 h-12 rounded-lg bg-green-subtle flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors duration-300">
                 <service.icon className="w-6 h-6 text-muted-foreground group-hover:text-primary transition-colors duration-300" />
