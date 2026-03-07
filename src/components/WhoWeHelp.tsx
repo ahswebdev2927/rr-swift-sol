@@ -46,7 +46,7 @@ const WhoWeHelp = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: i * 0.1 }}
-              className="group relative p-8 rounded-xl border border-border bg-card hover:border-primary/40 hover:shadow-lg transition-all duration-300"
+              className="group relative p-8 rounded-xl border border-border bg-card hover:bg-green-subtle hover:border-primary/40 hover:shadow-lg hover:shadow-primary/10 transition-all duration-300"
             >
               <div className="text-4xl mb-4">{region.flag}</div>
               <h3 className="font-display text-xl font-bold text-foreground mb-2 flex items-center gap-2">
