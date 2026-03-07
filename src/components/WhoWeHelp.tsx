@@ -3,19 +3,19 @@ import { MapPin } from "lucide-react";
 
 const regions = [
   {
-    title: "Professionals in USA",
-    description: "EST, CST, MST, PST time zone coverage with real-time project support.",
-    flag: "🇺🇸",
+    title: "Professionals in North America",
+    description: "Full time zone coverage across the USA and Canada with real-time project support.",
+    flag: "🇺🇸 🇨🇦",
   },
   {
-    title: "Professionals in Canada",
-    description: "Full support across all Canadian provinces and time zones.",
-    flag: "🇨🇦",
+    title: "Professionals in Europe & UK",
+    description: "GMT and CET compatible sessions with expert mentors for European professionals.",
+    flag: "🇬🇧 🇪🇺",
   },
   {
-    title: "Professionals in UK & Australia",
-    description: "GMT and AEST compatible sessions with expert mentors.",
-    flag: "🇬🇧 🇦🇺",
+    title: "Professionals Worldwide",
+    description: "Supporting IT professionals in Australia, Middle East, Asia, and beyond — wherever you work.",
+    flag: "🌍",
   },
 ];
 

@@ -2,10 +2,10 @@ import { motion } from "framer-motion";
 import { Clock, Shield, Users, Globe, Zap, HeadphonesIcon } from "lucide-react";
 
 const reasons = [
-  { icon: Clock, text: "Available across all major time zones" },
+  { icon: Clock, text: "Available across all time zones worldwide" },
   { icon: Shield, text: "100% confidential project support" },
   { icon: Users, text: "Industry-experienced mentors" },
-  { icon: Globe, text: "Serving 5+ countries globally" },
+  { icon: Globe, text: "Serving professionals globally" },
   { icon: Zap, text: "Real-time, hands-on assistance" },
   { icon: HeadphonesIcon, text: "Dedicated 1-on-1 support" },
 ];
