@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { ArrowRight, MessageCircle } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -21,32 +22,30 @@ const Hero = () => {
           </div>
 
           <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight tracking-tight text-foreground">
-            Real-Time IT Job Support for{" "}
-            <span className="text-gradient-green">Working Professionals</span>{" "}
-            Abroad
+            Real-Time IT Job Support{" "}
+            <span className="text-gradient-green">Worldwide</span>
           </h1>
 
           <p className="mt-6 text-lg text-muted-foreground max-w-xl leading-relaxed">
-            Expert live project support, online training, and mentorship tailored
-            for IT professionals in USA, Canada, UK, Australia, and Europe —
-            across all time zones.
+            Expert live project support, online training, and mentorship for
+            IT professionals working anywhere in the world — across all time zones.
           </p>
 
           <div className="mt-10 flex flex-wrap gap-4">
-            <a
-              href="#contact"
+            <Link
+              to="/contact"
               className="inline-flex items-center gap-2 px-7 py-3.5 rounded-lg bg-primary text-primary-foreground font-semibold text-sm green-glow-hover transition-all duration-300 hover:brightness-110"
             >
               <MessageCircle className="w-4 h-4" />
               Talk to an Expert
-            </a>
-            <a
-              href="#services"
+            </Link>
+            <Link
+              to="/services"
               className="inline-flex items-center gap-2 px-7 py-3.5 rounded-lg border border-border text-foreground font-semibold text-sm hover:bg-green-subtle transition-all duration-300 group"
             >
               View Job Support Services
               <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
-            </a>
+            </Link>
           </div>
 
           <div className="mt-14 flex items-center gap-8 text-sm text-muted-foreground">

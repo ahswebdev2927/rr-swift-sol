@@ -1,4 +1,5 @@
 import { Mail, Phone, MapPin } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -7,9 +8,9 @@ const Footer = () => {
         <div className="grid md:grid-cols-3 gap-12">
           {/* Brand */}
           <div>
-            <h3 className="font-display text-lg font-bold text-foreground mb-4">
+            <Link to="/" className="font-display text-lg font-bold text-foreground mb-4 block">
               RR<span className="text-gradient-green">Swift</span>Sol
-            </h3>
+            </Link>
             <p className="text-sm text-muted-foreground leading-relaxed">
               Real-time IT job support and online training for working
               professionals across the globe.
@@ -22,17 +23,22 @@ const Footer = () => {
               Quick Links
             </h4>
             <nav className="flex flex-col gap-2">
-              {["Home", "Services", "Technologies", "Why Us", "Testimonials", "Contact"].map(
-                (link) => (
-                  <a
-                    key={link}
-                    href={`#${link.toLowerCase().replace(/\s/g, "-")}`}
-                    className="text-sm text-muted-foreground hover:text-foreground transition-colors"
-                  >
-                    {link}
-                  </a>
-                )
-              )}
+              {[
+                { label: "Home", to: "/" },
+                { label: "Services", to: "/services" },
+                { label: "Technologies", to: "/technologies" },
+                { label: "Why Us", to: "/why-us" },
+                { label: "Testimonials", to: "/testimonials" },
+                { label: "Contact", to: "/contact" },
+              ].map((link) => (
+                <Link
+                  key={link.label}
+                  to={link.to}
+                  className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                >
+                  {link.label}
+                </Link>
+              ))}
             </nav>
           </div>
 
@@ -50,11 +56,11 @@ const Footer = () => {
                 info@rrswiftsol.com
               </a>
               <a
-                href="tel:+919999999999"
+                href="tel:+919000964005"
                 className="flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
               >
                 <Phone className="w-4 h-4" />
-                +91 999-999-9999
+                +91 900-096-4005
               </a>
               <div className="flex items-start gap-2 text-sm text-muted-foreground">
                 <MapPin className="w-4 h-4 mt-0.5 flex-shrink-0" />

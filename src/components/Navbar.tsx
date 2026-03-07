@@ -1,22 +1,23 @@
 import { useState, useEffect } from "react";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const navLinks = [
-  { label: "Home", href: "#" },
+  { label: "Home", href: "/" },
   {
     label: "Services",
-    href: "#services",
+    href: "/services",
     children: [
-      { label: "Job Support", href: "#services" },
-      { label: "Online Training", href: "#services" },
-      { label: "IT Consulting", href: "#services" },
+      { label: "Job Support", href: "/services" },
+      { label: "Online Training", href: "/services" },
+      { label: "IT Consulting", href: "/services" },
     ],
   },
-  { label: "Technologies", href: "#technologies" },
-  { label: "Why Us", href: "#why-us" },
-  { label: "Testimonials", href: "#testimonials" },
-  { label: "Contact", href: "#contact" },
+  { label: "Technologies", href: "/technologies" },
+  { label: "Why Us", href: "/why-us" },
+  { label: "Testimonials", href: "/testimonials" },
+  { label: "Contact", href: "/contact" },
 ];
 
 const Navbar = () => {
@@ -37,9 +38,9 @@ const Navbar = () => {
       }`}
     >
       <div className="container mx-auto flex items-center justify-between h-16 px-6">
-        <a href="#" className="font-display text-xl font-bold tracking-tight text-foreground">
+        <Link to="/" className="font-display text-xl font-bold tracking-tight text-foreground">
           RR<span className="text-gradient-green">Swift</span>Sol
-        </a>
+        </Link>
 
         {/* Desktop nav */}
         <nav className="hidden md:flex items-center gap-8">
@@ -51,11 +52,14 @@ const Navbar = () => {
                 onMouseEnter={() => setDropdownOpen(true)}
                 onMouseLeave={() => setDropdownOpen(false)}
               >
-                <button className="flex items-center gap-1 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors relative group">
+                <Link
+                  to={link.href}
+                  className="flex items-center gap-1 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors relative group"
+                >
                   {link.label}
                   <ChevronDown className="w-3.5 h-3.5" />
                   <span className="absolute -bottom-1 left-0 h-0.5 w-0 bg-primary transition-all duration-300 group-hover:w-full" />
-                </button>
+                </Link>
                 <AnimatePresence>
                   {dropdownOpen && (
                     <motion.div
@@ -66,37 +70,37 @@ const Navbar = () => {
                       className="absolute top-full left-0 mt-2 w-48 bg-card rounded-lg shadow-lg border border-border py-2"
                     >
                       {link.children.map((child) => (
-                        <a
+                        <Link
                           key={child.label}
-                          href={child.href}
+                          to={child.href}
                           className="block px-4 py-2 text-sm text-muted-foreground hover:text-foreground hover:bg-green-subtle transition-colors"
                         >
                           {child.label}
-                        </a>
+                        </Link>
                       ))}
                     </motion.div>
                   )}
                 </AnimatePresence>
               </div>
             ) : (
-              <a
+              <Link
                 key={link.label}
-                href={link.href}
+                to={link.href}
                 className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors relative group"
               >
                 {link.label}
                 <span className="absolute -bottom-1 left-0 h-0.5 w-0 bg-primary transition-all duration-300 group-hover:w-full" />
-              </a>
+              </Link>
             )
           )}
         </nav>
 
-        <a
-          href="#contact"
+        <Link
+          to="/contact"
           className="hidden md:inline-flex items-center px-5 py-2 rounded-lg bg-primary text-primary-foreground text-sm font-semibold green-glow-hover transition-all duration-300 hover:brightness-110"
         >
           Get Started
-        </a>
+        </Link>
 
         {/* Mobile toggle */}
         <button
@@ -118,21 +122,21 @@ const Navbar = () => {
           >
             <nav className="flex flex-col gap-1 px-6 py-4">
               {navLinks.map((link) => (
-                <a
+                <Link
                   key={link.label}
-                  href={link.href}
+                  to={link.href}
                   onClick={() => setMobileOpen(false)}
                   className="py-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
                 >
                   {link.label}
-                </a>
+                </Link>
               ))}
-              <a
-                href="#contact"
+              <Link
+                to="/contact"
                 className="mt-2 inline-flex items-center justify-center px-5 py-2.5 rounded-lg bg-primary text-primary-foreground text-sm font-semibold"
               >
                 Get Started
-              </a>
+              </Link>
             </nav>
           </motion.div>
         )}

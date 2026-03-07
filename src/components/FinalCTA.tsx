@@ -20,11 +20,11 @@ const FinalCTA = () => {
           </h2>
           <p className="text-background/70 max-w-lg mx-auto mb-10">
             Connect with our experts today and get the IT support you need to
-            excel in your career abroad.
+            excel in your career anywhere in the world.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <a
-              href="https://wa.me/919999999999"
+              href="https://wa.me/919000964005"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-7 py-3.5 rounded-lg bg-primary text-primary-foreground font-semibold text-sm green-glow-hover transition-all duration-300 hover:brightness-110"
@@ -33,7 +33,7 @@ const FinalCTA = () => {
               WhatsApp Us
             </a>
             <a
-              href="tel:+919999999999"
+              href="tel:+919000964005"
               className="inline-flex items-center gap-2 px-7 py-3.5 rounded-lg border border-background/20 text-background font-semibold text-sm hover:bg-background/10 transition-all duration-300"
             >
               <Phone className="w-4 h-4" />
