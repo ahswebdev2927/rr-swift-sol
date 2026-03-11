@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "react-router-dom";
+import logo from "@/assets/logo.png";
 
 const navLinks = [
   { label: "Home", href: "/" },
@@ -9,9 +10,9 @@ const navLinks = [
     label: "Services",
     href: "/services",
     children: [
-      { label: "Job Support", href: "/services" },
-      { label: "Online Training", href: "/services" },
-      { label: "IT Consulting", href: "/services" },
+      { label: "Job Support", href: "/services/job-support" },
+      { label: "Online Training", href: "/services/online-training" },
+      { label: "IT Consulting", href: "/services/it-consulting" },
     ],
   },
   { label: "Technologies", href: "/technologies" },
@@ -38,8 +39,12 @@ const Navbar = () => {
       }`}
     >
       <div className="container mx-auto flex items-center justify-between h-16 px-6">
-        <Link to="/" className="font-display text-xl font-bold tracking-tight text-foreground">
-          RR<span className="text-gradient-green">Swift</span>Sol
+        <Link to="/" className="flex items-center gap-2">
+          <img src={logo} alt="RR Swift Solutions" className="h-10 w-auto" />
+          <span className="font-display text-lg font-bold tracking-tight text-foreground leading-tight">
+            RR Swift<br />
+            <span className="text-gradient-green text-sm font-semibold">Solutions</span>
+          </span>
         </Link>
 
         {/* Desktop nav */}

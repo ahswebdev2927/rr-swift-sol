@@ -1,5 +1,6 @@
 import { Mail, Phone, MapPin } from "lucide-react";
 import { Link } from "react-router-dom";
+import logo from "@/assets/logo.png";
 
 const Footer = () => {
   return (
@@ -8,8 +9,12 @@ const Footer = () => {
         <div className="grid md:grid-cols-3 gap-12">
           {/* Brand */}
           <div>
-            <Link to="/" className="font-display text-lg font-bold text-foreground mb-4 block">
-              RR<span className="text-gradient-green">Swift</span>Sol
+            <Link to="/" className="flex items-center gap-2 mb-4">
+              <img src={logo} alt="RR Swift Solutions" className="h-10 w-auto" />
+              <span className="font-display text-lg font-bold text-foreground leading-tight">
+                RR Swift<br />
+                <span className="text-gradient-green text-sm font-semibold">Solutions</span>
+              </span>
             </Link>
             <p className="text-sm text-muted-foreground leading-relaxed">
               Real-time IT job support and online training for working
