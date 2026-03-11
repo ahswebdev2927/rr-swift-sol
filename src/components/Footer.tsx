@@ -9,11 +9,10 @@ const Footer = () => {
         <div className="grid md:grid-cols-3 gap-12">
           {/* Brand */}
           <div>
-            <Link to="/" className="flex items-center gap-2 mb-4">
-              <img src={logo} alt="RR Swift Solutions" className="h-10 w-auto" />
-              <span className="font-display text-lg font-bold text-foreground leading-tight">
-                RR Swift<br />
-                <span className="text-gradient-green text-sm font-semibold">Solutions</span>
+            <Link to="/" className="flex flex-col items-start gap-1 mb-4">
+              <img src={logo} alt="RR Swift Solutions" className="h-12 w-auto" />
+              <span className="font-display text-[10px] font-bold tracking-wider text-foreground uppercase">
+                RR Swift Solutions
               </span>
             </Link>
             <p className="text-sm text-muted-foreground leading-relaxed">

@@ -39,11 +39,10 @@ const Navbar = () => {
       }`}
     >
       <div className="container mx-auto flex items-center justify-between h-16 px-6">
-        <Link to="/" className="flex items-center gap-2">
-          <img src={logo} alt="RR Swift Solutions" className="h-10 w-auto" />
-          <span className="font-display text-lg font-bold tracking-tight text-foreground leading-tight">
-            RR Swift<br />
-            <span className="text-gradient-green text-sm font-semibold">Solutions</span>
+        <Link to="/" className="flex flex-col items-center gap-0.5">
+          <img src={logo} alt="RR Swift Solutions" className="h-12 w-auto" />
+          <span className="font-display text-[10px] font-bold tracking-wider text-foreground uppercase leading-none">
+            RR Swift Solutions
           </span>
         </Link>
 
