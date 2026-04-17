@@ -1,6 +1,7 @@
 import Navbar from "@/components/Navbar";
 import FinalCTA from "@/components/FinalCTA";
 import Footer from "@/components/Footer";
+import SEO from "@/components/SEO";
 import { motion } from "framer-motion";
 import { Briefcase, Target, Code, BarChart3, Layers, Settings } from "lucide-react";
 
@@ -16,9 +17,14 @@ const offerings = [
 const ITConsultingPage = () => {
   return (
     <div className="min-h-screen bg-background">
+      <SEO
+        title="IT Consulting Services — Architecture, Code Reviews & Strategy | RR Swift Solutions"
+        description="Expert IT Consulting from RR Swift Solutions: project architecture, code reviews, technical strategy, system integration, DevOps, and team augmentation. Trusted by startups and Fortune 500 companies."
+        canonical="/services/it-consulting"
+      />
       <Navbar />
-      <div className="pt-16">
-        <section className="py-24 bg-green-subtle/50">
+      <main id="main-content" role="main" className="pt-16">
+        <section aria-label="IT Consulting" className="py-24 bg-green-subtle/50">
           <div className="container mx-auto px-6">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -27,13 +33,13 @@ const ITConsultingPage = () => {
               className="text-center mb-16"
             >
               <div className="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center mx-auto mb-6">
-                <Briefcase className="w-8 h-8 text-primary" />
+                <Briefcase className="w-8 h-8 text-primary" aria-hidden="true" />
               </div>
               <h1 className="font-display text-4xl sm:text-5xl font-bold text-foreground mb-4">
-                IT <span className="text-gradient-green">Consulting</span>
+                IT <span className="text-gradient-green">Consulting Services</span> for Modern Teams
               </h1>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-                Expert guidance on project architecture, code reviews, and technical strategy — 
+                Expert guidance on project architecture, code reviews, and technical strategy —
                 helping teams and individuals make the right technology decisions.
               </p>
             </motion.div>
@@ -47,7 +53,7 @@ const ITConsultingPage = () => {
                   transition={{ duration: 0.4, delay: i * 0.1 }}
                   className="bg-card p-6 rounded-xl border border-border hover:bg-green-subtle hover:border-primary/40 transition-all duration-300"
                 >
-                  <o.icon className="w-6 h-6 text-primary mb-4" />
+                  <o.icon className="w-6 h-6 text-primary mb-4" aria-hidden="true" />
                   <h3 className="font-display text-lg font-bold text-foreground mb-2">{o.title}</h3>
                   <p className="text-sm text-muted-foreground leading-relaxed">{o.text}</p>
                 </motion.div>
@@ -70,7 +76,7 @@ const ITConsultingPage = () => {
             </motion.div>
           </div>
         </section>
-      </div>
+      </main>
       <FinalCTA />
       <Footer />
     </div>

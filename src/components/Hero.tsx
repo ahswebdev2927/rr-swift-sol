@@ -4,7 +4,10 @@ import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-[90vh] flex items-center overflow-hidden bg-background pt-16">
+    <section
+      aria-label="Hero"
+      className="relative min-h-[90vh] flex items-center overflow-hidden bg-background pt-16"
+    >
       {/* Subtle gradient orb */}
       <div className="absolute top-1/4 right-0 w-[600px] h-[600px] rounded-full bg-green-subtle opacity-60 blur-3xl pointer-events-none" />
       <div className="absolute bottom-0 left-0 w-[400px] h-[400px] rounded-full bg-green-subtle opacity-40 blur-3xl pointer-events-none" />
@@ -22,28 +25,32 @@ const Hero = () => {
           </div>
 
           <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight tracking-tight text-foreground">
-            Real-Time IT Job Support{" "}
-            <span className="text-gradient-green">Worldwide</span>
+            RR Swift Solutions — Expert{" "}
+            <span className="text-gradient-green">Online Job Support</span> & IT Training from India
           </h1>
 
-          <p className="mt-6 text-lg text-muted-foreground max-w-xl leading-relaxed">
-            Expert live project support, online training, and mentorship for
-            IT professionals working anywhere in the world — across all time zones.
+          <p className="mt-6 text-lg text-muted-foreground max-w-2xl leading-relaxed">
+            India's fastest-growing IT Services company providing real-time Online Job Support,
+            IT Training, Staffing & Outsourcing. Get personalized remote assistance for Informatica,
+            AWS, Salesforce, DevOps, Data Science, Java Full Stack, PHP, and Cyber Security — from
+            experts in Hyderabad, serving clients worldwide.
           </p>
 
           <div className="mt-10 flex flex-wrap gap-4">
             <Link
               to="/contact"
+              aria-label="Get online job support now — contact RR Swift Solutions"
               className="inline-flex items-center gap-2 px-7 py-3.5 rounded-lg bg-primary text-primary-foreground font-semibold text-sm green-glow-hover transition-all duration-300 hover:brightness-110"
             >
               <MessageCircle className="w-4 h-4" />
-              Talk to an Expert
+              Get Online Job Support Now
             </Link>
             <Link
               to="/services"
+              aria-label="Explore our IT services"
               className="inline-flex items-center gap-2 px-7 py-3.5 rounded-lg border border-border text-foreground font-semibold text-sm hover:bg-green-subtle transition-all duration-300 group"
             >
-              View Job Support Services
+              Explore Our IT Services
               <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
             </Link>
           </div>
