@@ -39,8 +39,14 @@ const Navbar = () => {
       }`}
     >
       <div className="container mx-auto flex items-center justify-between h-16 px-6">
-        <Link to="/" className="flex flex-col items-center gap-0.5">
-          <img src={logo} alt="RR Swift Solutions" className="h-12 w-auto" />
+        <Link to="/" className="flex flex-col items-center gap-0.5" aria-label="RR Swift Solutions home">
+          <img
+            src={logo}
+            alt="RR Swift Solutions logo — Online Job Support & IT Training from India"
+            className="h-12 w-auto"
+            width="120"
+            height="48"
+          />
           <span className="font-display text-[10px] font-bold tracking-wider text-foreground uppercase leading-none">
             RR Swift Solutions
           </span>
@@ -110,8 +116,10 @@ const Navbar = () => {
         <button
           className="md:hidden text-foreground"
           onClick={() => setMobileOpen(!mobileOpen)}
+          aria-label={mobileOpen ? "Close navigation menu" : "Open navigation menu"}
+          aria-expanded={mobileOpen}
         >
-          {mobileOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+          {mobileOpen ? <X className="w-6 h-6" aria-hidden="true" /> : <Menu className="w-6 h-6" aria-hidden="true" />}
         </button>
       </div>
 
