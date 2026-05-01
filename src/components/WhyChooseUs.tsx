@@ -47,23 +47,22 @@ const WhyChooseUs = () => {
           className="max-w-3xl mx-auto bg-card rounded-xl border border-border p-8 mb-20"
         >
           <p className="text-muted-foreground leading-relaxed mb-4">
-            It all started back in <span className="font-bold text-foreground">2008</span>, when 
-            <span className="font-bold text-foreground"> Ramcharan Racharla</span> was working as a trainer 
-            at an institute, helping IT professionals sharpen their skills. One day, a simple thought crossed 
-            his mind — <em className="text-primary">"Why not take this online and do it on my own?"</em>
+            It all started back in <span className="font-bold text-foreground">2008</span>, when the journey 
+            began with a simple goal — helping IT professionals sharpen their skills and grow in their careers. 
+            One day, a thought sparked — <em className="text-primary">"Why not take this online and do it independently?"</em>
           </p>
           <p className="text-muted-foreground leading-relaxed mb-4">
-            What seemed like a small idea quickly turned into something much bigger. With a deep passion for 
-            teaching and a genuine desire to help professionals succeed, Ramcharan started offering personalized 
-            online training and on-job support — long before it became mainstream.
+            What began as a small idea quickly evolved into something much bigger. Driven by a deep passion for 
+            teaching and a genuine desire to help professionals succeed, the focus shifted to offering personalized 
+            online training and real-time job support — long before it became mainstream.
           </p>
           <p className="text-muted-foreground leading-relaxed mb-4">
-            That one spark of initiative grew into <span className="font-bold text-foreground">RR Swift Solutions</span> — 
-            a company that today serves thousands of IT professionals across the globe, covering 25+ technologies 
+            That spark of initiative grew into <span className="font-bold text-foreground">RR Swift Solutions</span> — 
+            a company that today supports thousands of IT professionals across the globe, covering 25+ technologies 
             with a team of handpicked industry experts.
           </p>
           <p className="text-muted-foreground leading-relaxed">
-            From a one-person mission to a global team, the journey has been fueled by one simple belief: 
+            From a one-person mission to a global presence, the journey has been guided by one simple belief: 
             <span className="font-bold text-primary"> every professional deserves access to quality guidance, 
             no matter where they are in the world.</span>
           </p>
