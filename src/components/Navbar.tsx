@@ -18,6 +18,7 @@ const navLinks = [
   { label: "Technologies", href: "/technologies" },
   { label: "Why Us", href: "/why-us" },
   { label: "Testimonials", href: "/testimonials" },
+  { label: "Blog", href: "/blog" },
   { label: "Contact", href: "/contact" },
 ];
 
