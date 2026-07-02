@@ -39,6 +39,7 @@ const Footer = () => {
                 { label: "Technologies", to: "/technologies" },
                 { label: "Why Us", to: "/why-us" },
                 { label: "Testimonials", to: "/testimonials" },
+                { label: "Blog", to: "/blog" },
                 { label: "Contact", to: "/contact" },
               ].map((link) => (
                 <li key={link.label}>
