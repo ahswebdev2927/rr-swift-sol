@@ -104,9 +104,6 @@ const BlogPostPage = () => {
                   <span className="block text-sm font-semibold text-foreground">
                     {post.author.name}
                   </span>
-                  <span className="block text-xs text-muted-foreground">
-                    {post.author.role}
-                  </span>
                 </div>
               </div>
               <div className="flex items-center gap-4 text-xs text-muted-foreground">
