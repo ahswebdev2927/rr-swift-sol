@@ -8,7 +8,7 @@ interface SEOProps {
   ogImage?: string;
 }
 
-const SITE_URL = "https://swift-pathways-pro.lovable.app";
+const SITE_URL = "https://www.rrswiftsol.com";
 const DEFAULT_OG = "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/8c448cb8-d4cb-49e0-9616-befe19d49038/id-preview-7cc107c5--36d0027b-bad0-47b9-8856-d4dab6b9ad79.lovable.app-1771958873226.png";
 
 const SEO = ({ title, description, canonical, keywords, ogImage = DEFAULT_OG }: SEOProps) => {
