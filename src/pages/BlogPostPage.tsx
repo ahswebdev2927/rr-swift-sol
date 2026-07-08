@@ -50,10 +50,11 @@ const BlogPostPage = () => {
     );
   }
 
-  // Get related posts (same category, excluding current post)
-  const relatedPosts = blogPosts
-    .filter((p) => p.category === post.category && p.id !== post.id)
-    .slice(0, 3);
+  // Get the latest 4 blog posts (excluding current post) sorted by publication date
+  const relatedPosts = [...blogPosts]
+    .filter((p) => p.id !== post.id)
+    .sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime())
+    .slice(0, 4);
 
   return (
     <div className="min-h-screen bg-background">
