@@ -62,6 +62,8 @@ const BlogPostPage = () => {
         title={`${post.title} | RR Swift Solutions`}
         description={post.excerpt}
         canonical={`/blog/${post.slug}`}
+        keywords={post.tags.join(", ")}
+        ogImage={post.coverImage}
       />
       <Navbar />
 
