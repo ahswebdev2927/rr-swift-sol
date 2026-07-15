@@ -28,6 +28,7 @@ const OnlineTrainingPage = () => {
         title="Online IT Training — AWS, Salesforce, Data Science & More | RR Swift Solutions"
         description="Master in-demand technologies with RR Swift Solutions' instructor-led Online Training. AWS Cloud, Salesforce CRM, Data Science with Python, DevOps Engineering, and more — designed for working IT professionals worldwide."
         canonical="/services/online-training"
+        keywords="AWS training, Salesforce training, Data Science training, DevOps training, online IT training, software courses, RR Swift Solutions"
       />
       <Navbar />
       <main id="main-content" role="main" className="pt-16">
