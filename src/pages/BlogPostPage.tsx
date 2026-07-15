@@ -182,7 +182,7 @@ const BlogPostPage = () => {
           </div>
 
           {/* Article Body Content */}
-          <article className="prose max-w-none lg:prose-lg prose-headings:font-display prose-headings:font-bold prose-headings:text-foreground prose-p:text-muted-foreground prose-p:leading-relaxed prose-li:text-muted-foreground prose-strong:text-foreground prose-a:text-primary hover:prose-a:underline border-b border-border pb-12 mb-12">
+          <article className="prose max-w-none lg:prose-lg prose-headings:font-display prose-headings:font-bold prose-headings:text-foreground prose-p:text-muted-foreground prose-p:leading-relaxed prose-li:text-muted-foreground prose-strong:text-foreground prose-a:text-blue-600 hover:prose-a:text-blue-800 prose-a:underline border-b border-border pb-12 mb-12">
             <div dangerouslySetInnerHTML={{ __html: marked.parse(post.content || "") as string }} />
           </article>
 
