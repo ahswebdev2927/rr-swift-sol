@@ -26,7 +26,7 @@ interface WhatsAppButtonProps {
 const WhatsAppButton: React.FC<WhatsAppButtonProps> = ({
   phoneNumber = "919000964005",
   message = "Hello! I am interested in IT Job Support / Training.",
-  tooltipMessage = "Contact Us Now!",
+  tooltipMessage = "Get Suppourt Now!",
   ariaLabel = "Chat with us on WhatsApp",
 }) => {
   // Construct the secure WhatsApp URL with optional pre-filled message
@@ -36,19 +36,19 @@ const WhatsAppButton: React.FC<WhatsAppButtonProps> = ({
   return (
     <div className="fixed bottom-6 right-6 z-50 flex items-center group">
       {/* Side Tooltip */}
-      <div 
+      <div
         className="absolute right-full mr-4 whitespace-nowrap bg-card text-card-foreground text-xs sm:text-sm font-semibold px-4 py-2.5 rounded-lg shadow-xl border border-border flex items-center gap-2 pointer-events-none select-none z-40 animate-tooltip-cycle"
         role="tooltip"
       >
         {/* Pointer Arrow pointing to the WhatsApp button */}
         <div className="absolute -right-[5px] top-1/2 -translate-y-1/2 w-2 h-2 bg-card border-r border-t border-border rotate-45" />
-        
+
         {/* Pulsing indicator dot */}
         <span className="flex h-2 w-2 relative">
           <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#1aff1a] opacity-75"></span>
           <span className="relative inline-flex rounded-full h-2 w-2 bg-[#1aff1a]"></span>
         </span>
-        
+
         <span>{tooltipMessage}</span>
       </div>
 
