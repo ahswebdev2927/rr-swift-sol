@@ -28,18 +28,20 @@ const BlogPage = () => {
 
   const categories = ["All", ...Array.from(new Set(blogPosts.map((post) => post.category)))];
 
-  // Filter posts based on search query and selected category
-  const filteredPosts = blogPosts.filter((post) => {
-    const matchesSearch =
-      post.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      post.excerpt.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      post.tags.some((tag) => tag.toLowerCase().includes(searchQuery.toLowerCase()));
+  // Filter and sort posts based on search query, selected category, and publication date (newest first)
+  const filteredPosts = blogPosts
+    .filter((post) => {
+      const matchesSearch =
+        post.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
+        post.excerpt.toLowerCase().includes(searchQuery.toLowerCase()) ||
+        post.tags.some((tag) => tag.toLowerCase().includes(searchQuery.toLowerCase()));
 
-    const matchesCategory =
-      selectedCategory === "All" || post.category === selectedCategory;
+      const matchesCategory =
+        selectedCategory === "All" || post.category === selectedCategory;
 
-    return matchesSearch && matchesCategory;
-  });
+      return matchesSearch && matchesCategory;
+    })
+    .sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime());
 
   const featuredPost = filteredPosts.length > 0 ? filteredPosts[0] : null;
   const regularPosts = filteredPosts.length > 1 ? filteredPosts.slice(1) : [];
