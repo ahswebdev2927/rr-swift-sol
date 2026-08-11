@@ -89,7 +89,7 @@ const BlogPostPage = () => {
           {/* Article Header */}
           <header className="mb-10">
             <span className="px-3 py-1 text-xs font-bold rounded-md bg-primary text-primary-foreground">
-              {post.category}
+              {Array.isArray(post.category) ? post.category.join(" & ") : post.category}
             </span>
             <h1 className="font-display text-3xl md:text-5xl font-bold tracking-tight text-foreground mt-4 mb-6 leading-tight">
               {post.title}

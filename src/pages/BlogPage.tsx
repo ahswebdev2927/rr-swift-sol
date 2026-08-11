@@ -26,7 +26,16 @@ const BlogPage = () => {
 
 
 
-  const categories = ["All", ...Array.from(new Set(blogPosts.map((post) => post.category)))];
+  const categories = [
+    "All",
+    ...Array.from(
+      new Set(
+        blogPosts.flatMap((post) =>
+          Array.isArray(post.category) ? post.category : [post.category]
+        )
+      )
+    )
+  ];
 
   // Filter and sort posts based on search query, selected category, and publication date (newest first)
   const filteredPosts = blogPosts
@@ -37,7 +46,10 @@ const BlogPage = () => {
         post.tags.some((tag) => tag.toLowerCase().includes(searchQuery.toLowerCase()));
 
       const matchesCategory =
-        selectedCategory === "All" || post.category === selectedCategory;
+        selectedCategory === "All" ||
+        (Array.isArray(post.category)
+          ? post.category.includes(selectedCategory as any)
+          : post.category === selectedCategory);
 
       return matchesSearch && matchesCategory;
     })
@@ -141,7 +153,7 @@ const BlogPage = () => {
                       />
                       <div className="absolute top-4 left-4">
                         <span className="px-3 py-1 text-xs font-bold rounded-md bg-primary text-primary-foreground shadow-sm">
-                          {featuredPost.category}
+                          {Array.isArray(featuredPost.category) ? featuredPost.category.join(" & ") : featuredPost.category}
                         </span>
                       </div>
                     </div>
@@ -269,7 +281,7 @@ const BlogPage = () => {
                         />
                         <div className="absolute top-3 left-3">
                           <span className="px-2.5 py-0.5 text-[10px] font-bold rounded bg-primary/90 text-primary-foreground backdrop-blur-sm">
-                            {post.category}
+                            {Array.isArray(post.category) ? post.category.join(" & ") : post.category}
                           </span>
                         </div>
                       </Link>

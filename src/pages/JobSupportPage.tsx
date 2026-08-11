@@ -21,7 +21,7 @@ const JobSupportPage = () => {
         title="Online Job Support Services — Real-Time Project Help | RR Swift Solutions"
         description="Expert Online Job Support from India for AWS, Microsoft Azure, Salesforce, MERN & MEAN Stack, Hadoop, Big Data, Informatica, DevOps, Data Science, Java, PHP, Cyber Security, Automation Testing & more. Real-time, confidential, and tailored to your live project needs."
         canonical="/services/job-support"
-        keywords="AWS job support, Azure job support, Salesforce job support, MERN stack job support, MEAN stack job support, Hadoop job support, Big Data job support, Informatica job support, DevOps job support, Data Science job support, Java job support, Automation Testing job support, online job support India, IT job support"
+        keywords="AWS job support, Azure job support, Salesforce job support, MERN stack job support, MEAN stack job support, Python job support, Hadoop job support, Big Data job support, Informatica job support, DevOps job support, Data Science job support, Java job support, Automation Testing job support, online job support India, IT job support"
       />
       <Navbar />
       <main id="main-content" role="main" className="pt-16">
