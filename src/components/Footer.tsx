@@ -74,7 +74,7 @@ const Footer = () => {
                 aria-label="Call RR Swift Solutions"
               >
                 <Phone className="w-4 h-4" aria-hidden="true" />
-                +91 900-096-4005
+                +91 9000.964.005
               </a>
               <div className="flex items-start gap-2 text-sm text-muted-foreground">
                 <MapPin className="w-4 h-4 mt-0.5 flex-shrink-0" aria-hidden="true" />
