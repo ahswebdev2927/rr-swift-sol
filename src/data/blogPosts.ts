@@ -12,6 +12,7 @@ import { post11MernMeanStack } from "./posts/post11-mern-mean-stack";
 import { post12PythonJobTraining } from "./posts/post12-python-job-training";
 import { post13TopItCareerTrends } from "./posts/post13-top-it-career-trends";
 import { post14AwsOnJobSupportTechnicalAssistance } from "./posts/post14-aws-on-job-support-technical-assistance";
+import { post15ItProjectOnJobSupport } from "./posts/post15-it-project-on-job-support";
 
 export interface BlogPost {
   id: string;
@@ -44,5 +45,6 @@ export const blogPosts: BlogPost[] = [
   post11MernMeanStack,
   post12PythonJobTraining,
   post13TopItCareerTrends,
-  post14AwsOnJobSupportTechnicalAssistance
+  post14AwsOnJobSupportTechnicalAssistance,
+  post15ItProjectOnJobSupport
 ];
