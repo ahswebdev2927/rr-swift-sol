@@ -56,7 +56,7 @@
   </url>
   <url>
     <loc>https://www.rrswiftsol.com/blog</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -153,6 +153,12 @@
   <url>
     <loc>https://www.rrswiftsol.com/blog/servicenow-on-job-support-practical-guidance</loc>
     <lastmod>2026-09-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.rrswiftsol.com/blog/on-job-support-online-job-support-proxy-support-it-professionals</loc>
+    <lastmod>2026-09-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

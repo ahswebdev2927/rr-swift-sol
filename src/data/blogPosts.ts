@@ -14,6 +14,7 @@ import { post13TopItCareerTrends } from "./posts/post13-top-it-career-trends";
 import { post14AwsOnJobSupportTechnicalAssistance } from "./posts/post14-aws-on-job-support-technical-assistance";
 import { post15ItProjectOnJobSupport } from "./posts/post15-it-project-on-job-support";
 import { post16ServiceNowOnJobSupport } from "./posts/post16-servicenow-on-job-support";
+import { post17OnJobSupportProxySupport } from "./posts/post17-on-job-support-proxy-support";
 
 export interface BlogPost {
   id: string;
@@ -48,5 +49,6 @@ export const blogPosts: BlogPost[] = [
   post13TopItCareerTrends,
   post14AwsOnJobSupportTechnicalAssistance,
   post15ItProjectOnJobSupport,
-  post16ServiceNowOnJobSupport
+  post16ServiceNowOnJobSupport,
+  post17OnJobSupportProxySupport
 ];
