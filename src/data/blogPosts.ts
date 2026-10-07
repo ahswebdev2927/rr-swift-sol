@@ -17,6 +17,7 @@ import { post16ServiceNowOnJobSupport } from "./posts/post16-servicenow-on-job-s
 import { post17OnJobSupportProxySupport } from "./posts/post17-on-job-support-proxy-support";
 import { post18FrontendUiDevelopmentJobSupport } from "./posts/post18-frontend-ui-development-job-support";
 import { post19JavaFullStackOnlineJobSupportProxySupport } from "./posts/post19-java-full-stack-online-job-support-proxy-support";
+import { post20WhyDoYouNeedAngularProxySupportIn2026 } from "./posts/post20-why-do-you-need-angular-proxy-support-in-2026";
 
 export interface BlogPost {
   id: string;
@@ -54,5 +55,6 @@ export const blogPosts: BlogPost[] = [
   post16ServiceNowOnJobSupport,
   post17OnJobSupportProxySupport,
   post18FrontendUiDevelopmentJobSupport,
-  post19JavaFullStackOnlineJobSupportProxySupport
+  post19JavaFullStackOnlineJobSupportProxySupport,
+  post20WhyDoYouNeedAngularProxySupportIn2026
 ];
