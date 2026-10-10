@@ -56,7 +56,7 @@
   </url>
   <url>
     <loc>https://www.rrswiftsol.com/blog</loc>
-    <lastmod>2026-10-07</lastmod>
+    <lastmod>2026-10-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -177,6 +177,12 @@
   <url>
     <loc>https://www.rrswiftsol.com/blog/why-do-you-need-angular-proxy-support-2026</loc>
     <lastmod>2026-10-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.rrswiftsol.com/blog/machine-learning-proxy-job-support</loc>
+    <lastmod>2026-10-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
