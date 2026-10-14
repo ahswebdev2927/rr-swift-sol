@@ -19,6 +19,7 @@ import { post18FrontendUiDevelopmentJobSupport } from "./posts/post18-frontend-u
 import { post19JavaFullStackOnlineJobSupportProxySupport } from "./posts/post19-java-full-stack-online-job-support-proxy-support";
 import { post20WhyDoYouNeedAngularProxySupportIn2026 } from "./posts/post20-why-do-you-need-angular-proxy-support-in-2026";
 import { post21MachineLearningProxyJobSupport } from "./posts/post21-machine-learning-proxy-job-support";
+import { post22SapXiPiOnJobSupport } from "./posts/post22-sap-xi-pi-on-job-support";
 
 export interface BlogPost {
   id: string;
@@ -58,5 +59,6 @@ export const blogPosts: BlogPost[] = [
   post18FrontendUiDevelopmentJobSupport,
   post19JavaFullStackOnlineJobSupportProxySupport,
   post20WhyDoYouNeedAngularProxySupportIn2026,
-  post21MachineLearningProxyJobSupport
+  post21MachineLearningProxyJobSupport,
+  post22SapXiPiOnJobSupport
 ];
