@@ -20,6 +20,7 @@ import { post19JavaFullStackOnlineJobSupportProxySupport } from "./posts/post19-
 import { post20WhyDoYouNeedAngularProxySupportIn2026 } from "./posts/post20-why-do-you-need-angular-proxy-support-in-2026";
 import { post21MachineLearningProxyJobSupport } from "./posts/post21-machine-learning-proxy-job-support";
 import { post22SapXiPiOnJobSupport } from "./posts/post22-sap-xi-pi-on-job-support";
+import { post23RealTimeOnJobSupportExpertsIndia } from "./posts/post23-real-time-on-job-support-experts-india";
 
 export interface BlogPost {
   id: string;
@@ -60,5 +61,6 @@ export const blogPosts: BlogPost[] = [
   post19JavaFullStackOnlineJobSupportProxySupport,
   post20WhyDoYouNeedAngularProxySupportIn2026,
   post21MachineLearningProxyJobSupport,
-  post22SapXiPiOnJobSupport
+  post22SapXiPiOnJobSupport,
+  post23RealTimeOnJobSupportExpertsIndia
 ];
