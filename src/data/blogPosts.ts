@@ -23,6 +23,7 @@ import { post22SapXiPiOnJobSupport } from "./posts/post22-sap-xi-pi-on-job-suppo
 import { post23RealTimeOnJobSupportExpertsIndia } from "./posts/post23-real-time-on-job-support-experts-india";
 import { post24ArtificialIntelligenceProxyJobSupport } from "./posts/post24-artificial-intelligence-proxy-job-support";
 import { post25GoogleDataEngineerOnJobSupport } from "./posts/post25-google-data-engineer-on-job-support";
+import { post26MicrosoftAzureDataEngineeringOnJobSupport } from "./posts/post26-microsoft-azure-data-engineering-on-job-support";
 
 export interface BlogPost {
   id: string;
@@ -66,5 +67,6 @@ export const blogPosts: BlogPost[] = [
   post22SapXiPiOnJobSupport,
   post23RealTimeOnJobSupportExpertsIndia,
   post24ArtificialIntelligenceProxyJobSupport,
-  post25GoogleDataEngineerOnJobSupport
+  post25GoogleDataEngineerOnJobSupport,
+  post26MicrosoftAzureDataEngineeringOnJobSupport
 ];
