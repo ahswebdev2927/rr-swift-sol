@@ -56,7 +56,7 @@
   </url>
   <url>
     <loc>https://www.rrswiftsol.com/blog</loc>
-    <lastmod>2026-11-11</lastmod>
+    <lastmod>2026-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -225,6 +225,12 @@
   <url>
     <loc>https://www.rrswiftsol.com/blog/ruby-on-rails-job-support</loc>
     <lastmod>2026-11-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.rrswiftsol.com/blog/blockchain-on-job-support</loc>
+    <lastmod>2026-11-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

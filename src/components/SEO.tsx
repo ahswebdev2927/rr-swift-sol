@@ -13,6 +13,9 @@ const DEFAULT_OG = "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/8c448cb8
 
 const SEO = ({ title, description, canonical, keywords, ogImage = DEFAULT_OG }: SEOProps) => {
   const url = canonical ? `${SITE_URL}${canonical}` : SITE_URL + "/";
+  const fullOgImage = ogImage.startsWith("http")
+    ? ogImage
+    : `${SITE_URL}${ogImage.startsWith("/") ? "" : "/"}${ogImage}`;
   return (
     <Helmet>
       <title>{title}</title>
@@ -26,7 +29,7 @@ const SEO = ({ title, description, canonical, keywords, ogImage = DEFAULT_OG }: 
       <meta property="og:url" content={url} />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
-      <meta property="og:image" content={ogImage} />
+      <meta property="og:image" content={fullOgImage} />
       <meta property="og:site_name" content="RR Swift Solutions" />
       <meta property="og:locale" content="en_IN" />
 
@@ -35,7 +38,7 @@ const SEO = ({ title, description, canonical, keywords, ogImage = DEFAULT_OG }: 
       <meta name="twitter:url" content={url} />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
-      <meta name="twitter:image" content={ogImage} />
+      <meta name="twitter:image" content={fullOgImage} />
       <meta name="twitter:site" content="@RRSwiftSol" />
     </Helmet>
   );
