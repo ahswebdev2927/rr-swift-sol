@@ -28,6 +28,7 @@ import { post27GuidewirePolicyCenterOnJobSupport } from "./posts/post27-guidewir
 import { post28RubyOnRailsJobSupport } from "./posts/post28-ruby-on-rails-job-support";
 import { post29BlockchainOnJobSupport } from "./posts/post29-blockchain-on-job-support";
 import { post30DotnetFullStackOnlineOnJobSupport } from "./posts/post30-dotnet-full-stack-online-on-job-support";
+import { post31GenerativeAiOnlineOnJobSupport } from "./posts/post31-generative-ai-online-on-job-support";
 
 export interface BlogPost {
   id: string;
@@ -76,5 +77,6 @@ export const blogPosts: BlogPost[] = [
   post27GuidewirePolicyCenterOnJobSupport,
   post28RubyOnRailsJobSupport,
   post29BlockchainOnJobSupport,
-  post30DotnetFullStackOnlineOnJobSupport
+  post30DotnetFullStackOnlineOnJobSupport,
+  post31GenerativeAiOnlineOnJobSupport
 ];
