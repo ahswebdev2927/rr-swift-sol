@@ -29,6 +29,7 @@ import { post28RubyOnRailsJobSupport } from "./posts/post28-ruby-on-rails-job-su
 import { post29BlockchainOnJobSupport } from "./posts/post29-blockchain-on-job-support";
 import { post30DotnetFullStackOnlineOnJobSupport } from "./posts/post30-dotnet-full-stack-online-on-job-support";
 import { post31GenerativeAiOnlineOnJobSupport } from "./posts/post31-generative-ai-online-on-job-support";
+import { post32InformaticaOnlineOnJobSupport } from "./posts/post32-informatica-online-on-job-support";
 
 export interface BlogPost {
   id: string;
@@ -78,5 +79,6 @@ export const blogPosts: BlogPost[] = [
   post28RubyOnRailsJobSupport,
   post29BlockchainOnJobSupport,
   post30DotnetFullStackOnlineOnJobSupport,
-  post31GenerativeAiOnlineOnJobSupport
+  post31GenerativeAiOnlineOnJobSupport,
+  post32InformaticaOnlineOnJobSupport
 ];
