@@ -2,8 +2,8 @@ import { describe, it, expect } from "vitest";
 import { blogPosts } from "../data/blogPosts";
 
 describe("Blog Posts Data", () => {
-  it("should have exactly 32 blog posts", () => {
-    expect(blogPosts).toHaveLength(32);
+  it("should have exactly 33 blog posts", () => {
+    expect(blogPosts).toHaveLength(33);
   });
 
   it("should have valid fields for all blog posts", () => {
