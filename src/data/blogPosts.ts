@@ -31,6 +31,7 @@ import { post30DotnetFullStackOnlineOnJobSupport } from "./posts/post30-dotnet-f
 import { post31GenerativeAiOnlineOnJobSupport } from "./posts/post31-generative-ai-online-on-job-support";
 import { post32InformaticaOnlineOnJobSupport } from "./posts/post32-informatica-online-on-job-support";
 import { post33CyberSecurityOnlineOnJobSupport } from "./posts/post33-cyber-security-online-on-job-support";
+import { post34MobileTestingOnlineOnJobSupport } from "./posts/post34-mobile-testing-online-on-job-support";
 
 export interface BlogPost {
   id: string;
@@ -82,5 +83,6 @@ export const blogPosts: BlogPost[] = [
   post30DotnetFullStackOnlineOnJobSupport,
   post31GenerativeAiOnlineOnJobSupport,
   post32InformaticaOnlineOnJobSupport,
-  post33CyberSecurityOnlineOnJobSupport
+  post33CyberSecurityOnlineOnJobSupport,
+  post34MobileTestingOnlineOnJobSupport
 ];
