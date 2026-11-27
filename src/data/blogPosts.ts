@@ -33,6 +33,7 @@ import { post32InformaticaOnlineOnJobSupport } from "./posts/post32-informatica-
 import { post33CyberSecurityOnlineOnJobSupport } from "./posts/post33-cyber-security-online-on-job-support";
 import { post34MobileTestingOnlineOnJobSupport } from "./posts/post34-mobile-testing-online-on-job-support";
 import { post35ClouderaDataAnalystOnlineOnJobSupport } from "./posts/post35-cloudera-data-analyst-online-on-job-support";
+import { post36SapSuccessfactorsOnJobSupport } from "./posts/post36-sap-successfactors-on-job-support";
 
 export interface BlogPost {
   id: string;
@@ -86,5 +87,6 @@ export const blogPosts: BlogPost[] = [
   post32InformaticaOnlineOnJobSupport,
   post33CyberSecurityOnlineOnJobSupport,
   post34MobileTestingOnlineOnJobSupport,
-  post35ClouderaDataAnalystOnlineOnJobSupport
+  post35ClouderaDataAnalystOnlineOnJobSupport,
+  post36SapSuccessfactorsOnJobSupport
 ];
