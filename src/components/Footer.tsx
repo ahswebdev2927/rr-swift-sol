@@ -1,6 +1,7 @@
 import { Mail, Phone, MapPin } from "lucide-react";
 import { Link } from "react-router-dom";
 import logo from "@/assets/logo.png";
+import { OFFICES } from "@/data/offices";
 
 const Footer = () => {
   return (
@@ -59,27 +60,34 @@ const Footer = () => {
             <h2 className="font-display text-sm font-bold text-foreground uppercase tracking-wider mb-4">
               Contact Us
             </h2>
-            <div className="flex flex-col gap-3">
+            <div className="flex flex-col gap-4">
               <a
                 href="mailto:info@rrswiftsol.com"
                 className="flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
                 aria-label="Email RR Swift Solutions"
               >
-                <Mail className="w-4 h-4" aria-hidden="true" />
+                <Mail className="w-4 h-4 flex-shrink-0" aria-hidden="true" />
                 info@rrswiftsol.com
               </a>
-              <a
-                href="tel:+919000964005"
-                className="flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
-                aria-label="Call RR Swift Solutions"
-              >
-                <Phone className="w-4 h-4" aria-hidden="true" />
-                +91 9000.964.005
-              </a>
-              <div className="flex items-start gap-2 text-sm text-muted-foreground">
-                <MapPin className="w-4 h-4 mt-0.5 flex-shrink-0" aria-hidden="true" />
-                <span>Hyderabad, Telangana, India</span>
-              </div>
+              {OFFICES.map((office) => (
+                <div key={office.id} className="flex flex-col gap-1.5 pt-2 border-t border-border/60">
+                  <span className="text-xs font-semibold uppercase tracking-wider text-foreground">
+                    {office.shortLabel}
+                  </span>
+                  <a
+                    href={office.phoneHref}
+                    className="flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
+                    aria-label={`Call RR Swift Solutions ${office.shortLabel}`}
+                  >
+                    <Phone className="w-4 h-4 flex-shrink-0" aria-hidden="true" />
+                    {office.phoneDisplay}
+                  </a>
+                  <div className="flex items-start gap-2 text-sm text-muted-foreground">
+                    <MapPin className="w-4 h-4 mt-0.5 flex-shrink-0" aria-hidden="true" />
+                    <span>{office.address}</span>
+                  </div>
+                </div>
+              ))}
             </div>
           </address>
         </div>
